@@ -1,0 +1,85 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=4.04.01
+  CrossCplrVrs=1.3
+[END]
+[BEGIN]
+  ObjTp=Hd
+  Cmn1=To be used with the TiVo Premiere v1.2.umc module only.\\Not to||1
+  Cmn2=be used as a stand alone module.
+[END]
+[BEGIN]
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,167,168,179,213,214,215,216,217,225,226,248,249,266,267,310,718,756,854,
+  Exclusions_CDS=5
+  Inclusions_CDS=6
+  Name=TiVo Premiere Processor v1.2
+  SmplCName=TiVo Premiere Processor v1.2.usp
+  Code=1
+  SysRev5=3.083
+  SMWRev=2.02.05
+  InputCue1=Key_Dash
+  InputSigType1=Digital
+  InputCue2=Key_Enter
+  InputSigType2=Digital
+  InputCue3=Key_Back
+  InputSigType3=Digital
+  InputCue4=Key_Clear
+  InputSigType4=Digital
+  InputCue5=Key_Num[#]
+  InputSigType5=Digital
+  InputList2Cue1=From_Device$
+  InputList2SigType1=Serial
+  OutputList2Cue1=Display_Channel$
+  OutputList2SigType1=Serial
+  OutputList2Cue2=To_Device$
+  OutputList2SigType2=Serial
+  ParamCue1=[Reference Name]
+  MinVariableInputs=5
+  MaxVariableInputs=14
+  MinVariableInputsList2=1
+  MaxVariableInputsList2=1
+  MinVariableOutputs=0
+  MaxVariableOutputs=0
+  MinVariableOutputsList2=2
+  MaxVariableOutputsList2=2
+  MinVariableParams=0
+  MaxVariableParams=0
+  Expand=expand_separately
+  Expand2=expand_separately
+  ProgramTree=Logic
+  SymbolTree=32
+  Hint=
+  PdfHelp=
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  Pp1=1
+  MPp=1
+  NVStorage=10
+  ParamSigType1=String
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlus2CompiledName=S2_TiVo_Premiere_Processor_v1_2
+  SymJam=NonExclusive
+  FileName=TiVo Premiere Processor v1.2.ush
+  SIMPLPlusModuleEncoding=0
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=1
+  Tp=1
+  NoS=False
+[END]

@@ -1,0 +1,231 @@
+/*
+    CSS sheet for the DM testing report
+    Created by Dan Jackson
+    June 2, 2010
+*/
+
+/* Cover page table for overall page formatting */
+table.coverpage {
+	border-width: 0px;
+	border-spacing: ;
+	border-style: groove;
+	border-color: black;
+	border-collapse: separate;
+	background-color: white;
+}
+table.coverpage th {
+	border-width: 0px;
+	padding: 0px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+}
+table.coverpage td {
+	border-width: 0px;
+	padding: 0px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+}
+
+/* Cover page "left bar" visible table */
+table.coverpageleft {
+	border-width: 1px;
+	border-spacing: ;
+	border-style: groove;
+	border-color: black;
+	border-collapse: separate;
+	background-color: white;
+    margin-left:0px; 
+    margin-right:5px;
+}
+table.coverpageleft th {
+	border-width: 0px;
+	padding: 5px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+}
+table.coverpageleft td {
+	border-width: 0px;
+	padding: 5px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+    vertical-align: center;
+    
+}
+.verticaltext {
+writing-mode: tb-rl;
+/* filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); [Bug 52157] */
+text-align:center;
+font-size:45px;
+font-family:Verdana, Arial, sans-serif;
+    font-weight:bold;
+    white-space:nowrap;
+    }
+    
+.generaltext {
+text-align:center;
+font-size:12px;
+font-family:Verdana, Arial, sans-serif;
+font-weight:regular;
+    }
+    
+/* Cover page text */
+.title {
+text-align:center;
+font-size:22px;
+font-family:Verdana, Arial, sans-serif;
+font-weight:bold;    
+    }
+    
+.subtitle {
+text-align:center;
+font-size:16px;
+font-family:Verdana, Arial, sans-serif;
+font-weight:regular;    
+    }
+    
+table.abstract {
+	border-width: 0px;
+	border-spacing: ;
+	border-style: groove;
+	border-color: black;
+	border-collapse: separate;
+	background-color: white;
+    page-break-before:always;
+    margin-left:10px; 
+    margin-right:10px;
+}
+table.abstract th {
+	border-width: 0px;
+	padding: 5px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+    text-align:center;
+    font-size:24px;
+font-family:Verdana, Arial, sans-serif;
+font-weight:regular;
+}
+table.abstract td {
+	border-width: 0px;
+	padding: 5px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+    text-align:justify;
+font-size:12px;
+font-family:Verdana, Arial, sans-serif;
+font-weight:regular;
+}
+    
+.disclaimer {
+	border-width: 1px;
+	padding: 5px;
+	border-style: ridge;
+	border-color: black;
+	background-color: white;
+    font-size:12px;
+font-family:Verdana, Arial, sans-serif;
+font-style:italic;
+font-weight:regular;
+}
+
+table.overview {
+	border-width: 0px;
+	border-spacing: ;
+	border-style: outset;
+	border-color: gray;
+	border-collapse: separate;
+	background-color: white;
+    page-break-before:always;
+    margin-left:10px; 
+    margin-right:10px;
+}
+table.overview th {
+	border-width: 0px;
+	padding: 5px;
+	border-style: groove;
+	border-color: red;
+	background-color: rgb(245, 235, 225);
+    text-align:center;
+    font-size:20px;
+font-family:Verdana, Arial, sans-serif;
+font-weight:regular;
+}
+table.overview td {
+	border-width: 1px;
+	padding: 5px;
+	border-style: groove;
+	border-color: black;
+	background-color: white;
+    text-align:justify;
+font-size:12px;
+font-family:Verdana, Arial, sans-serif;
+font-weight:regular;
+}
+
+.overviewleftcolumn {
+font-size:16px;
+font-family:Verdana, Arial, sans-serif;
+font-weight:regular; 
+text-align:right;
+vertical-align:top;
+    }
+    
+.subtext {
+text-align:left;
+font-size:12px;
+font-family:Verdana, Arial, sans-serif;
+font-style:italic;
+font-weight:regular;
+}
+
+
+table.resolutionsTable {
+	border-width: 0px;
+	border-spacing: ;
+	border-style: groove;
+	border-color: gray;
+	border-collapse: separate;
+	background-color: white;
+}
+table.resolutionsTable th {
+	border-width: 1px;
+	padding: 1px;
+	border-style: groove;
+	border-color: black;
+	background-color:white;
+    vertical-align:top;
+}
+table.resolutionsTable td {
+	border-width: 1px;
+	padding: 1px;
+	border-style: groove;
+	border-color: black;
+	background-color: white;
+    font-size:12px;
+font-family:Verdana, Arial, sans-serif;
+font-weight:regular;
+}
+
+.highlight {
+color: #FF0000;    
+    }
+
+.verticalResolution {
+writing-mode:tb-rl;
+filter: flipv fliph;
+white-space:nowrap;
+font-size:7px;
+font-family:Verdana, Arial, sans-serif;
+font-weight:regular;
+}
+
+h2 {
+font-family:Verdana, Arial, sans-serif;
+font-weight:regular;
+page-break-before:always;
+}

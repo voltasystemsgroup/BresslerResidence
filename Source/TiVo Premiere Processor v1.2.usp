@@ -1,0 +1,174 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:
+System Name:
+System Number:
+Programmer:
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+#SYMBOL_NAME "TiVo Premiere Processor v1.2"
+// #HINT ""
+#DEFINE_CONSTANT MAXDIGITS   10
+#DEFINE_CONSTANT DISPLAYTIME 300
+// #DIGITAL_EXPAND 
+// #ANALOG_SERIAL_EXPAND 
+// #OUTPUT_SHIFT
+//#PRINT_TO_TRACE
+#ENABLE_TRACE
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+
+
+#HELP_BEGIN
+To be used with the TiVo Premiere v1.2.umc module only.
+Not to be used as a stand alone module.
+#HELP_END 
+
+DIGITAL_INPUT Key_Dash,
+			  Key_Enter,
+			  Key_Back,
+			  Key_Clear, 
+			  Key_Num[10];
+
+BUFFER_INPUT From_Device$[100]; 
+ 
+STRING_OUTPUT Display_Channel$,
+			  To_Device$; 
+
+INTEGER Semaphore, a;
+STRING Channel$[MAXDIGITS], CurrentChan$[MAXDIGITS], Temp$[MAXDIGITS];
+
+PUSH Key_Num
+	{
+	integer Index, i, iChar;
+	string Temp$[10], Temp2$[10];
+	
+	Index = getlastmodifiedarrayindex();
+	if(len(Channel$) < MAXDIGITS)
+		{
+		makestring(Channel$, "%s%d", Channel$, Index - 1);
+		Temp$ = Channel$;
+		for(i = 1 to len(Temp$))
+			{
+			iChar = getC(Temp$);
+			if(iChar = 0x0020)
+				iChar = 0x002D;
+			Temp2$ = Temp2$ + chr(iChar);
+			}
+		Display_Channel$ = Temp2$;			
+		}
+	}
+
+Push Key_Dash
+	{
+	if(len(Channel$) < MAXDIGITS)
+		{
+		makestring(Channel$, "%s\x20", Channel$);
+		makestring(Display_Channel$, "%s-", mid(Channel$, 1, len(Channel$) - 1));
+		}
+	}
+
+Push Key_Back
+	{
+	integer Length;	
+	if(len(Channel$) > 0)
+		{
+		clearbuffer(Temp$);	
+		Length = len(Channel$);
+		Channel$ = mid(Channel$, 1, Length - 1);
+		for (a = 1 to len(Channel$))
+			{
+			if(byte(Channel$, a) = 0x20)
+				makestring(Temp$, "%s-", Temp$);			
+			else
+				makestring(Temp$, "%s%s", Temp$, chr(byte(Channel$, a)));			
+			}
+		Display_Channel$ = Temp$;
+		}
+	}
+
+Push Key_Clear
+	{
+	Channel$ = "";
+	Display_Channel$ = "";
+	}
+	
+Push Key_Enter
+	{
+	Display_Channel$ = "Changing Channels";
+	delay(50);
+	makestring(To_Device$, "SETCH %s\x0D", Channel$);
+	Channel$ = "";
+	}
+		
+CHANGE From_Device$
+	{
+	integer i, Marker1, Marker2, Marker3;
+	string Temp$[50], TempChan$[5], TempSubChan$[5], NewChan$[10];
+	
+	if(Semaphore = 0)
+		{
+		Semaphore = 1;
+		while(find("\x0D", From_Device$) > 0)
+			{			
+			Temp$ = remove("\x0D", From_Device$);
+				if(find("CH_STATUS", Temp$) > 0)
+				{
+				Marker1 = find("\x20", Temp$, 1);
+				Marker2 = find("\x20", Temp$, Marker1 + 1);
+				Marker3 = find("\x20", Temp$, Marker2 + 1);
+				TempChan$ = itoa(atoi(mid(Temp$, Marker1 + 1, Marker2 - (Marker1 + 1))));
+                if(Marker3) // 
+					TempSubChan$ = itoa(atoi(mid(Temp$, Marker2 + 1, Marker3 - (Marker2 + 1))));
+				if(len(TempChan$) > 0)
+					{
+					if(atoi(TempSubChan$) > 0)
+						makestring(NewChan$, "%s-%s", TempChan$, TempSubChan$);
+					else
+						makestring(NewChan$, "%s", TempChan$);
+					if(NewChan$ <> CurrentChan$)
+						{
+						CurrentChan$ = NewChan$;
+						Display_Channel$ = CurrentChan$;
+						}
+					}
+				}
+			else if(find("CH_FAILED", Temp$) > 0)
+				{
+				if(find("INVALID", Temp$) > 0)
+					{
+					Display_Channel$ = "Invalid Channel";
+					delay(DISPLAYTIME);
+					Display_Channel$ = CurrentChan$;
+					}
+				else if(find("NO_LIVE", Temp$) > 0)
+					{
+					Display_Channel$ = "Not Live";
+					delay(DISPLAYTIME);
+					Display_Channel$ = CurrentChan$;
+					}
+				else if(find("RECORDING", Temp$) > 0)
+					{
+					Display_Channel$ = "Recording Channel";
+					delay(DISPLAYTIME);
+					Display_Channel$ = CurrentChan$;
+					}
+				}
+			}
+		Semaphore= 0;
+		}
+	}
+	
+Function Main()
+	{
+    Semaphore = 0;
+    Channel$ = "";
+	}

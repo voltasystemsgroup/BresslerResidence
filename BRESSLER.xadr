@@ -1,0 +1,36 @@
+[Crestron_Toolbox_Address_Book]
+
+[Entries]
+This .xadr file was created using Toolbox v2.41 or later.=:slot 01
+It is not compatible with this version of Toolbox.=:slot 02
+Please open a .adr Address Book to continue.=:slot 03
+
+[AddressBookInfo]
+Schema=2.0
+Version=1.0
+DefaultEntry=
+
+[ComSpecs]
+USB=usb
+MC3=auto 192.168.1.50
+DM=auto 192.168.1.51
+GUEST GATWY=auto 192.168.1.56
+GYM GATWY=auto 192.168.1.57
+6x=auto 192.168.1.52
+DMFARSIDE=auto 76.126.238.206,41751
+MC3 FARSAIDE=auto 76.126.238.206,41750
+MC3 EXGATEWAY FARSIDE=MC3 FARSAIDE:slot 03
+GUEST GTWY FARSIDE=auto 76.126.238.206,41756
+
+[Notes]
+USB=
+MC3=
+DM=
+GUEST GATWY=
+GYM GATWY=
+6x=
+DMFARSIDE=
+MC3 FARSAIDE=
+MC3 EXGATEWAY FARSIDE=
+GUEST GTWY FARSIDE=
+

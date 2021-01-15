@@ -1,0 +1,78 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=CresSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=4.00.18
+  CrossCplrVrs=1.3
+[END]
+[BEGIN]
+  ObjTp=Hd
+  Cmn1=||3To be used as part of the Sharp LC-32D64U v1.0 module only.||2
+  Cmn2=Not to be used as a stand-alone module.
+[END]
+[BEGIN]
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,310,718,756,854,
+  Exclusions_CDS=6
+  Name=Sharp LC-32D64U Processor v1.0 (cm)
+  SmplCName=Sharp LC-32D64U Processor v1.0.csp
+  Code=1
+  SysRev5=3.083
+  SMWRev=2.02.05
+  InputCue1=Air
+  InputSigType1=Digital
+  InputCue2=Cable
+  InputSigType2=Digital
+  InputCue3=KP[#]
+  InputSigType3=Digital
+  OutputList2Cue1=Number$
+  OutputList2SigType1=Serial
+  OutputList2Cue2=To_Device$
+  OutputList2SigType2=Serial
+  ParamCue1=[Reference Name]
+  MinVariableInputs=3
+  MaxVariableInputs=15
+  MinVariableInputsList2=0
+  MaxVariableInputsList2=0
+  MinVariableOutputs=0
+  MaxVariableOutputs=0
+  MinVariableOutputsList2=2
+  MaxVariableOutputsList2=2
+  MinVariableParams=0
+  MaxVariableParams=0
+  Expand=expand_separately
+  Expand2=expand_separately
+  ProgramTree=Logic
+  SymbolTree=32
+  Hint=
+  PdfHelp=
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  Pp1=1
+  MPp=1
+  NVStorage=10
+  ParamSigType1=String
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlus2CompiledName=S2_Sharp_LC_32D64U_Processor_v1_0
+  SymJam=NonExclusive
+  FileName=Sharp LC-32D64U Processor v1.0.csh
+  SIMPLPlusModuleEncoding=0
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=1
+  Tp=1
+  NoS=False
+[END]

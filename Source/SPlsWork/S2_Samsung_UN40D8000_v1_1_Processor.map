@@ -1,0 +1,301 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x80000000         0x00500000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000000                __DYNAMIC=0x0
+                0x00400000                PROVIDE (__stack, 0x400000)
+                0x00000000                PROVIDE (hardware_init_hook, 0x0)
+                0x00000000                PROVIDE (_hardware_init_hook, 0x0)
+                0x00000000                PROVIDE (software_init_hook, 0x0)
+                0x00000000                PROVIDE (_software_init_hook, 0x0)
+
+.text           0x80000000     0x7ee0
+ *(.text)
+ .text          0x80000000     0x1660 S2_Samsung_UN40D8000_v1_1_Processor.o
+                0x8000025c                S2_Samsung_UN40D8000_v1_1_ProcessorEventHandler00000
+                0x80001348                S2_Samsung_UN40D8000_v1_1_Processor_EventHandler
+                0x80001622                S2_Samsung_UN40D8000_v1_1_Processor__SPLS_TMPVAR__WAITLABEL_0__
+                0x80000842                S2_Samsung_UN40D8000_v1_1_ProcessorEventHandler00003
+                0x80000a18                S2_Samsung_UN40D8000_v1_1_ProcessorEventHandler00004
+                0x80000410                S2_Samsung_UN40D8000_v1_1_ProcessorEventHandler00001
+                0x8000066c                S2_Samsung_UN40D8000_v1_1_ProcessorEventHandler00002
+                0x8000149e                S2_Samsung_UN40D8000_v1_1_Processor_main
+ .text          0x80001660     0x5836 library.o
+                0x8000584c                RotateRightLong
+                0x80005e5a                IsSystem
+                0x800057b0                Seed
+                0x800030a8                Remove
+                0x8000542c                Ltoa
+                0x80005158                Atoi
+                0x800044c0                InitRampInfoArray
+                0x80005c06                Right
+                0x80006c36                LockInputSema
+                0x800056da                Mod
+                0x800058c2                Getc
+                0x8000560e                SMuldiv
+                0x80005e3c                IsHidden
+                0x800054f2                Min
+                0x80006a4a                hextosi
+                0x80005fe0                WriteIntegerArray
+                0x80006556                GetSignedIntArrayElementPtr
+                0x80004e7a                CheckStructArray
+                0x80006a5e                hextosl
+                0x80006166                WriteSignedIntegerArray
+                0x80004b42                InitStringParamArray
+                0x80003e14                ReadSignedLongIntegerArray
+                0x80002d36                GatherToDelimiter
+                0x80004966                InitStringArray
+                0x800054cc                Max
+                0x80005e96                IsReadOnly
+                0x800055d6                SMax
+                0x80002eda                GatherByLength
+                0x80005366                Chr
+                0x80005fb8                ReadSignedLongInteger
+                0x800053e4                Itohex
+                0x80004dec                GetStructArrayElement
+                0x800050e0                UNS_SetByte
+                0x80005bda                ReverseFindi
+                0x800042bc                ReadStringArray
+                0x80006366                GetIntArrayElementPtr
+                0x80005a16                Lower
+                0x800057cc                RotateLeft
+                0x80006b7e                ResizeIfAutogrow
+                0x800045ec                CheckInputArray
+                0x80001bce                ResizeStringArray
+                0x800052f8                Atosl
+                0x80005120                High
+                0x8000577c                Rnd
+                0x8000569e                UMod
+                0x80005822                RotateLeftLong
+                0x80006caa                FindNumericChar
+                0x800067ae                CheckIOArrayBounds2
+                0x80005df4                MakeProgramFilename
+                0x800055f2                SMin
+                0x8000594a                Left
+                0x8000588c                CheckBufferThreshold
+                0x80005f70                ReadSignedInteger
+                0x8000514a                LowWord
+                0x80001660                Bit
+                0x80005f20                ReadLongInteger
+                0x80004f5e                Byte
+                0x8000645e                GetLongArrayElementPtr
+                0x80005bac                ReverseFind
+                0x80005e0a                GetSeries
+                0x80006d76                InitTcpServer
+                0x800059fe                Len
+                0x8000687e                InitializeRampInfoInternal
+                0x80005518                Divide
+                0x80005264                Atol
+                0x80005e00                GetModelNumber
+                0x80006746                CheckIOArrayBounds
+                0x80004646                CheckStringInputArray
+                0x80006228                WriteSignedLongIntegerArray
+                0x80004d36                GetStringArrayElement
+                0x80005470                Ltohex
+                0x8000539c                Itoa
+                0x800057f6                RotateRight
+                0x80003396                InternalReverseFind
+                0x80005f00                WriteLongInteger
+                0x8000486a                InitDynamicStringStruct
+                0x8000475c                SetStringArray
+                0x80003bf2                ReadSignedIntegerArray
+                0x800046a0                SetOutputArray
+                0x80005eb0                WriteInteger
+                0x80004cca                InitStructDynamicArray
+                0x80003620                SetString
+                0x80005716                Random
+                0x80005f48                WriteSignedInteger
+                0x800018c4                Find
+                0x80005e14                GetProgramNumber
+                0x80005aea                Mid
+                0x80006ce8                InitTcpClient
+                0x800027b2                ResizeStructArray
+                0x8000664e                GetSignedLongArrayElementPtr
+                0x80006a70                hextol
+                0x80004036                ReadString
+                0x800049fc                InitDynamicStringArray
+                0x80006b56                UpperChar
+                0x800051f4                Atosi
+                0x80005ed8                ReadInteger
+                0x8000558a                Muldiv
+                0x8000470e                SetStringOutputArray
+                0x800062ec                WriteString
+                0x80002226                ResizeIntegerArray
+                0x800045b4                InitInOutArray
+                0x80004c0a                InitNvramStringArray
+                0x800054b4                Abs
+                0x8000565a                SDivide
+                0x800037b0                ReadIntegerArray
+                0x80001770                CompareStrings
+                0x80006b2e                LowerChar
+                0x80006e06                InitUdpSocket
+                0x80005874                ClearBuffer
+                0x80005cc2                Upper
+                0x80004ca6                InitStructArray
+                0x80005d98                MakeLower
+                0x80005e78                IsVolume
+                0x80003202                RemoveByLength
+                0x80004ef6                CheckStringOutputArrayIndex
+                0x800060a2                WriteLongIntegerArray
+                0x8000692a                InitRampInfoStructArray
+                0x8000513c                HighWord
+                0x80001a38                ResizeString
+                0x80005e1e                IsDirectory
+                0x800039d0                ReadLongIntegerArray
+                0x8000512e                Low
+                0x80002bdc                Gather
+                0x80005dc6                MakeUpper
+                0x8000482c                InitStringStruct
+                0x80006816                CheckStringArrayBounds
+                0x8000555c                CheckDenominator
+                0x80006a32                hextoi
+                0x80004154                WriteStringArray
+                0x8000501e                SetByte
+                0x800068d4                InitializeRampInfo
+                0x80006c70                UnLockInputSema
+                0x80005f98                WriteSignedLongInteger
+                0x8000491e                InitNvramStringStruct
+ *fill*         0x80006e96        0xa
+                0x80006ea0                .=ALIGN(0x10)
+ *(.eh_frame)
+                0x80006ea0                .=ALIGN(0x10)
+ *(.gnu.linkonce.t.*)
+                0x80006ea0                .=ALIGN(0x4)
+                0x80006ea0                __CTOR_LIST__=.
+                0x80006ea0                ___CTOR_LIST__=.
+                0x80006ea0        0x4 LONG 0x0 (((__CTOR_END__-__CTOR_LIST__)/0x4)-0x2)
+ *(.ctors)
+                0x80006ea4        0x4 LONG 0x0
+                0x80006ea8                __CTOR_END__=.
+                0x80006ea8                __DTOR_LIST__=.
+                0x80006ea8                ___DTOR_LIST__=.
+                0x80006ea8        0x4 LONG 0x0 (((__DTOR_END__-__DTOR_LIST__)/0x4)-0x2)
+ *(.dtors)
+                0x80006eac        0x4 LONG 0x0
+                0x80006eb0                __DTOR_END__=.
+ *(.rodata)
+ .rodata        0x80006eb0      0x3bf S2_Samsung_UN40D8000_v1_1_Processor.o
+ .rodata        0x8000726f      0xc54 library.o
+ *(.gcc_except_table)
+ *fill*         0x80007ec3        0x1
+                0x80007ec4                .=ALIGN(0x2)
+                0x80007ec4                __INIT_SECTION__=.
+                0x80007ec4        0x4 LONG 0x4e560000
+ *(.init)
+                0x80007ec8        0x2 SHORT 0x4e5e
+                0x80007eca        0x2 SHORT 0x4e75
+                0x80007ecc                __FINI_SECTION__=.
+                0x80007ecc        0x4 LONG 0x4e560000
+ *(.fini)
+                0x80007ed0        0x2 SHORT 0x4e5e
+                0x80007ed2        0x2 SHORT 0x4e75
+ *(.lit)
+ *fill*         0x80007ed4        0xc
+                0x80007ee0                .=ALIGN(0x10)
+                0x80007ee0                _etext=.
+                0x80007ee0                etext=.
+
+.data           0x80007ee0        0x0
+                0x80007ee0                copy_start=.
+ *(.shdata)
+ *(.data)
+ *(.gnu.linkonce.d.*)
+                0x80007ee0                .=ALIGN(0x10)
+                0x80007ee0                _edata=.
+                0x80007ee0                copy_end=.
+
+.got
+ *(.got.plt)
+ *(.got)
+
+EntryList       0x80007ee0      0x110
+ *(EntryList)
+ EntryList      0x80007ee0      0x110 S2_Samsung_UN40D8000_v1_1_Processor.o
+                0x80007ee0                S2_Samsung_UN40D8000_v1_1_Processor_Entry
+                0x80007ff0                .=ALIGN(0x4)
+
+FunctionList    0x80007ff0        0x4
+ *(FunctionList)
+ FunctionList   0x80007ff0        0x4 globals.o
+                0x80007ff0                g_pFunctions
+                0x80007ff4                .=ALIGN(0x4)
+
+.bss            0x80007ff4        0x0
+                0x80007ff4                .=ALIGN(0x4)
+                0x80007ff4                __bss_start=.
+ *(.shbss)
+ *(.bss)
+ *(COMMON)
+                0x80007ff8                _end=ALIGN(0x8)
+                0x80007ff8                __end=_end
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+LOAD S2_Samsung_UN40D8000_v1_1_Processor.o
+LOAD globals.o
+LOAD library.o
+OUTPUT(S2_Samsung_UN40D8000_v1_1_Processor.elf elf32-m68k)
+
+.comment        0x80007ff4       0x72
+ .comment       0x80007ff4       0x26 S2_Samsung_UN40D8000_v1_1_Processor.o
+ .comment       0x8000801a       0x26 globals.o
+ .comment       0x80008040       0x26 library.o

@@ -1,0 +1,107 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+*******************************************************************************************/
+
+/*
+Dealer Name:Crestron Las Vegas    
+System Name:
+System Number:5154    
+Programmer:Kevin Dry    
+Comments:F.I.A.H.
+*/
+
+/*******************************************************************************************
+  Compiler Directivezzzz
+*******************************************************************************************/
+
+#SYMBOL_NAME "KD-Sharp Volume v1.0"
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+
+#HELP_BEGIN
+KD-LG Volume v1.0
+***********************************
+This module is designed to control the volume/mute
+of some LG-LCDs  The device ID is fixed to 01.  Make sure your TV
+is set to 01
+#HELP_END
+
+/*******************************************************************************************
+  Inputzzz
+*******************************************************************************************/
+
+Digital_Input Volume_UP, Volume_DN;
+String_Output TX$;
+Analog_output Volume_Out;
+					  
+/*******************************************************************************************
+  Global Variablezzz
+********************************************************************************************/
+
+Integer I;												//Integer to be used later
+
+/*******************************************************************************************
+  Function Callzzzzz
+********************************************************************************************/
+
+Function Volume()
+	{
+	TX$ = "VOLM" + itoa(I) + "  \r";					//Create string
+	Volume_out = I;										//Bargraph to be scaled externaly								
+  	}
+
+Function Mute_Off_F()									//Mute off on voulme increase/decrease
+	{	
+	TX$ = "MUTE2   \r";									//Actual string
+	}
+
+                   
+/*******************************************************************************************
+  The Shit
+********************************************************************************************/
+ 
+Push Volume_UP
+     {
+    Call Mute_Off_F();
+	
+	While (Volume_UP = 1)								//While volume up is being pressed....
+		{
+		If(I < 60)										//Stops I from going above 60 (Max for tv)
+		{
+		I = I + 1;										//Add 1 to I (Increase volume)
+		call Volume();									//Create string
+		}
+	Delay (10);											//Ramp
+     
+   }
+}
+
+Push Volume_DN
+    {
+    Call Mute_Off_F();
+
+	While (Volume_DN = 1)							//While volume up is being pressed....
+		{
+		If(I >= 1)									//Stops I from going below zero
+		{
+		I = I - 1;									//Subtract 1 from I (Decrease volume)
+		call Volume();								//Create string
+		}
+	Delay (10);										//Ramp
+     
+   }
+} 
+
+/*******************************************************************************************
+  Startup
+********************************************************************************************/
+Function Main()
+	{
+	WaitForInitializationComplete();
+	IF (I > 60  ||  I = 0)
+	{
+	i = 25;													//Set I to less than 64 on startup
+	
+	}
+
+}

@@ -1,0 +1,1864 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='DMTestReportStylesheet.xsl'?>
+<DigitalMediaTestReport>
+  <ProjectInfo>
+    <Heading1>Abstract</Heading1>
+    <ProjectName>1891 Vallejo 04052013</ProjectName>
+    <UnitUnderTest>8X8</UnitUnderTest>
+    <DateTime>4/5/2013 4:46:35 PM</DateTime>
+    <SerialNumber>8326182</SerialNumber>
+    <FirmwareName>DM-MD8x8</FirmwareName>
+    <FirmwareVersion>4.102.159200059 (Oct 10 2012)</FirmwareVersion>
+    <Address>tcp 192.168.1.51</Address>
+    <Preparer>
+      <PreparerName>
+      </PreparerName>
+      <PreparerTitle>
+      </PreparerTitle>
+    </Preparer>
+    <Reviewer>
+      <ReviewerName>
+      </ReviewerName>
+      <ReviewerTitle>
+      </ReviewerTitle>
+    </Reviewer>
+    <Integrator>
+      <IntegratorName>
+      </IntegratorName>
+      <IntegratorAddress1>
+      </IntegratorAddress1>
+      <IntegratorAddress2>
+      </IntegratorAddress2>
+      <IntegratorPhone>
+      </IntegratorPhone>
+    </Integrator>
+    <SystemDesigner>
+      <SystemDesignerName>
+      </SystemDesignerName>
+      <SystemDesignerAddress1>
+      </SystemDesignerAddress1>
+      <SystemDesignerAddress2>
+      </SystemDesignerAddress2>
+      <SystemDesignerPhone>
+      </SystemDesignerPhone>
+    </SystemDesigner>
+    <Client>
+      <ClientName>
+      </ClientName>
+      <ClientAddress1>
+      </ClientAddress1>
+      <ClientAddress2>
+      </ClientAddress2>
+      <ClientPhone>
+      </ClientPhone>
+    </Client>
+  </ProjectInfo>
+  <Heading2>DigitalMedia System Overview:</Heading2>
+  <TestReports>
+    <HDCPComplianceOnSourceDevices>
+      <Heading2>HDCP Compliance on Source Devices</Heading2>
+      <OverviewText>The following source devices have been verified to support the number of downstream KSVs indicated. Those sources that do not support the number of downstream KSVs in the system cannot be routed to all outputs simultaneously.</OverviewText>
+      <Inputs>
+        <Input>
+          <Number>01</Number>
+          <Name>TIVO</Name>
+          <FirmwareName>DMC-HD-Stream</FirmwareName>
+          <FirmwareVersion>1.1592.00041</FirmwareVersion>
+          <SerialNumber>4573620</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 01:slot 01:slot 01</Address>
+          <Data>
+            <MaxDevices>16</MaxDevices>
+            <DownstreamDevices>0</DownstreamDevices>
+            <KSVLimitTestStatus>HDCP check not run</KSVLimitTestStatus>
+            <HDCPState>Authenticated</HDCPState>
+          </Data>
+        </Input>
+        <Input>
+          <Number>02</Number>
+          <Name>DIRECTV</Name>
+          <FirmwareName>DMC-HD-Stream</FirmwareName>
+          <FirmwareVersion>1.1592.00041</FirmwareVersion>
+          <SerialNumber>8850786</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 02:slot 01:slot 01</Address>
+          <Data>
+            <MaxDevices>16</MaxDevices>
+            <DownstreamDevices>0</DownstreamDevices>
+            <KSVLimitTestStatus>HDCP check not run</KSVLimitTestStatus>
+            <HDCPState>Authenticated</HDCPState>
+          </Data>
+        </Input>
+        <Input>
+          <Number>03</Number>
+          <Name>BLU RAY</Name>
+          <FirmwareName>DMC-HD-Stream</FirmwareName>
+          <FirmwareVersion>1.1592.00041</FirmwareVersion>
+          <SerialNumber>8617161</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 03:slot 01:slot 01</Address>
+          <Data>
+            <MaxDevices>16</MaxDevices>
+            <DownstreamDevices>0</DownstreamDevices>
+            <KSVLimitTestStatus>HDCP check completed successfully</KSVLimitTestStatus>
+            <HDCPState>Authenticated</HDCPState>
+          </Data>
+        </Input>
+        <Input>
+          <Number>04</Number>
+          <Name>APPLE TV</Name>
+          <FirmwareName>DMC-HD-Stream</FirmwareName>
+          <FirmwareVersion>1.1592.00041</FirmwareVersion>
+          <SerialNumber>5297961</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 04:slot 01:slot 01</Address>
+          <Data>
+            <MaxDevices>16</MaxDevices>
+            <DownstreamDevices>0</DownstreamDevices>
+            <KSVLimitTestStatus>HDCP check completed successfully</KSVLimitTestStatus>
+            <HDCPState>Authenticated</HDCPState>
+          </Data>
+        </Input>
+      </Inputs>
+    </HDCPComplianceOnSourceDevices>
+    <VideoResolutionAndAudioFormatSupportOnOutputs>
+      <Heading2>Video Resolution and Audio Format Support on Outputs</Heading2>
+      <VideoResolutionSupportOnOutputs>
+        <Heading2>Video Resolution Support on Outputs</Heading2>
+        <ResolutionTable>
+          <Resolution>
+            <Index>1</Index>
+            <HActiveSizePixels>640</HActiveSizePixels>
+            <VActiveSizePixels>480</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>25</PixelClockMHz>
+            <Name>
+            </Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>2</Index>
+            <HActiveSizePixels>720</HActiveSizePixels>
+            <VActiveSizePixels>480</VActiveSizePixels>
+            <RefreshRateHz>30</RefreshRateHz>
+            <PixelClockMHz>27</PixelClockMHz>
+            <Name>480i</Name>
+            <VideoType>NTSC Video</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>3</Index>
+            <HActiveSizePixels>720</HActiveSizePixels>
+            <VActiveSizePixels>480</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>27</PixelClockMHz>
+            <Name>480p</Name>
+            <VideoType>NTSC Video</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>4</Index>
+            <HActiveSizePixels>720</HActiveSizePixels>
+            <VActiveSizePixels>576</VActiveSizePixels>
+            <RefreshRateHz>25</RefreshRateHz>
+            <PixelClockMHz>27</PixelClockMHz>
+            <Name>576i</Name>
+            <VideoType>PAL Video</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>5</Index>
+            <HActiveSizePixels>720</HActiveSizePixels>
+            <VActiveSizePixels>576</VActiveSizePixels>
+            <RefreshRateHz>50</RefreshRateHz>
+            <PixelClockMHz>27</PixelClockMHz>
+            <Name>576p</Name>
+            <VideoType>PAL Video</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>6</Index>
+            <HActiveSizePixels>800</HActiveSizePixels>
+            <VActiveSizePixels>600</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>40</PixelClockMHz>
+            <Name>
+            </Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>7</Index>
+            <HActiveSizePixels>848</HActiveSizePixels>
+            <VActiveSizePixels>480</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>33</PixelClockMHz>
+            <Name>
+            </Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>8</Index>
+            <HActiveSizePixels>1024</HActiveSizePixels>
+            <VActiveSizePixels>768</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>65</PixelClockMHz>
+            <Name>
+            </Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>9</Index>
+            <HActiveSizePixels>1280</HActiveSizePixels>
+            <VActiveSizePixels>720</VActiveSizePixels>
+            <RefreshRateHz>50</RefreshRateHz>
+            <PixelClockMHz>74</PixelClockMHz>
+            <Name>720p50</Name>
+            <VideoType>PAL Video</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>10</Index>
+            <HActiveSizePixels>1280</HActiveSizePixels>
+            <VActiveSizePixels>720</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>74</PixelClockMHz>
+            <Name>720p60</Name>
+            <VideoType>NTSC Video</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>11</Index>
+            <HActiveSizePixels>1280</HActiveSizePixels>
+            <VActiveSizePixels>768</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>79</PixelClockMHz>
+            <Name>
+            </Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>12</Index>
+            <HActiveSizePixels>1280</HActiveSizePixels>
+            <VActiveSizePixels>768</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>68</PixelClockMHz>
+            <Name>Reduced Blanking</Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>13</Index>
+            <HActiveSizePixels>1280</HActiveSizePixels>
+            <VActiveSizePixels>800</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>83</PixelClockMHz>
+            <Name>
+            </Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>14</Index>
+            <HActiveSizePixels>1280</HActiveSizePixels>
+            <VActiveSizePixels>800</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>72</PixelClockMHz>
+            <Name>Reduced Blanking</Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>15</Index>
+            <HActiveSizePixels>1280</HActiveSizePixels>
+            <VActiveSizePixels>960</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>108</PixelClockMHz>
+            <Name>
+            </Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>16</Index>
+            <HActiveSizePixels>1280</HActiveSizePixels>
+            <VActiveSizePixels>1024</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>108</PixelClockMHz>
+            <Name>
+            </Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>17</Index>
+            <HActiveSizePixels>1360</HActiveSizePixels>
+            <VActiveSizePixels>768</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>85</PixelClockMHz>
+            <Name>
+            </Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>18</Index>
+            <HActiveSizePixels>1366</HActiveSizePixels>
+            <VActiveSizePixels>768</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>85</PixelClockMHz>
+            <Name>
+            </Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>19</Index>
+            <HActiveSizePixels>1366</HActiveSizePixels>
+            <VActiveSizePixels>768</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>72</PixelClockMHz>
+            <Name>Reduced Blanking</Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>20</Index>
+            <HActiveSizePixels>1400</HActiveSizePixels>
+            <VActiveSizePixels>1050</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>121</PixelClockMHz>
+            <Name>
+            </Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>21</Index>
+            <HActiveSizePixels>1400</HActiveSizePixels>
+            <VActiveSizePixels>1050</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>101</PixelClockMHz>
+            <Name>Reduced Blanking</Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>22</Index>
+            <HActiveSizePixels>1440</HActiveSizePixels>
+            <VActiveSizePixels>900</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>106</PixelClockMHz>
+            <Name>
+            </Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>23</Index>
+            <HActiveSizePixels>1440</HActiveSizePixels>
+            <VActiveSizePixels>900</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>88</PixelClockMHz>
+            <Name>Reduced Blanking</Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>24</Index>
+            <HActiveSizePixels>1600</HActiveSizePixels>
+            <VActiveSizePixels>900</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>108</PixelClockMHz>
+            <Name>Reduced Blanking</Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>25</Index>
+            <HActiveSizePixels>1600</HActiveSizePixels>
+            <VActiveSizePixels>1200</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>162</PixelClockMHz>
+            <Name>
+            </Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>26</Index>
+            <HActiveSizePixels>1680</HActiveSizePixels>
+            <VActiveSizePixels>1050</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>146</PixelClockMHz>
+            <Name>
+            </Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>27</Index>
+            <HActiveSizePixels>1680</HActiveSizePixels>
+            <VActiveSizePixels>1050</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>119</PixelClockMHz>
+            <Name>Reduced Blanking</Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>28</Index>
+            <HActiveSizePixels>1920</HActiveSizePixels>
+            <VActiveSizePixels>1080</VActiveSizePixels>
+            <RefreshRateHz>25</RefreshRateHz>
+            <PixelClockMHz>74</PixelClockMHz>
+            <Name>1080i 25Hz</Name>
+            <VideoType>PAL Video</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>29</Index>
+            <HActiveSizePixels>1920</HActiveSizePixels>
+            <VActiveSizePixels>1080</VActiveSizePixels>
+            <RefreshRateHz>30</RefreshRateHz>
+            <PixelClockMHz>74</PixelClockMHz>
+            <Name>1080i 30Hz</Name>
+            <VideoType>NTSC Video</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>30</Index>
+            <HActiveSizePixels>1920</HActiveSizePixels>
+            <VActiveSizePixels>1080</VActiveSizePixels>
+            <RefreshRateHz>24</RefreshRateHz>
+            <PixelClockMHz>74</PixelClockMHz>
+            <Name>1080p 24Hz</Name>
+            <VideoType>Video</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>31</Index>
+            <HActiveSizePixels>1920</HActiveSizePixels>
+            <VActiveSizePixels>1080</VActiveSizePixels>
+            <RefreshRateHz>50</RefreshRateHz>
+            <PixelClockMHz>148</PixelClockMHz>
+            <Name>1080p 50Hz</Name>
+            <VideoType>PAL Video</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>32</Index>
+            <HActiveSizePixels>1920</HActiveSizePixels>
+            <VActiveSizePixels>1080</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>148</PixelClockMHz>
+            <Name>1080p 60Hz</Name>
+            <VideoType>NTSC Video</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>33</Index>
+            <HActiveSizePixels>1920</HActiveSizePixels>
+            <VActiveSizePixels>1200</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>154</PixelClockMHz>
+            <Name>Reduced Blanking</Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>34</Index>
+            <HActiveSizePixels>2048</HActiveSizePixels>
+            <VActiveSizePixels>1080</VActiveSizePixels>
+            <RefreshRateHz>24</RefreshRateHz>
+            <PixelClockMHz>74</PixelClockMHz>
+            <Name>2048x1080 24Hz</Name>
+            <VideoType>Video</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>35</Index>
+            <HActiveSizePixels>2048</HActiveSizePixels>
+            <VActiveSizePixels>1152</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>162</PixelClockMHz>
+            <Name>Reduced Blanking</Name>
+            <VideoType>PC</VideoType>
+          </Resolution>
+          <Resolution>
+            <Index>36</Index>
+            <HActiveSizePixels>2048</HActiveSizePixels>
+            <VActiveSizePixels>1080</VActiveSizePixels>
+            <RefreshRateHz>60</RefreshRateHz>
+            <PixelClockMHz>155</PixelClockMHz>
+            <Name>2048x1080 60Hz</Name>
+            <VideoType>Video</VideoType>
+          </Resolution>
+        </ResolutionTable>
+        <Inputs>
+          <Input>
+            <Number>01</Number>
+            <Name>TIVO</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>4573620</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 01:slot 01:slot 01</Address>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions>
+                <Resolution Index="32" />
+                <Resolution Index="32" />
+                <Resolution Index="30" />
+                <Resolution Index="29" />
+                <Resolution Index="10" />
+                <Resolution Index="3" />
+                <Resolution Index="1" />
+              </SupportedResolutions>
+            </Data>
+          </Input>
+          <Input>
+            <Number>02</Number>
+            <Name>DIRECTV</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>8850786</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 02:slot 01:slot 01</Address>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions>
+                <Resolution Index="32" />
+                <Resolution Index="32" />
+                <Resolution Index="30" />
+                <Resolution Index="29" />
+                <Resolution Index="10" />
+                <Resolution Index="3" />
+                <Resolution Index="1" />
+              </SupportedResolutions>
+            </Data>
+          </Input>
+          <Input>
+            <Number>03</Number>
+            <Name>BLU RAY</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>8617161</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 03:slot 01:slot 01</Address>
+            <Data>
+              <EDID3DCapability>3D support:Basic</EDID3DCapability>
+              <SupportedResolutions>
+                <Resolution Index="32" />
+                <Resolution Index="32" />
+                <Resolution Index="30" />
+                <Resolution Index="29" />
+                <Resolution Index="10" />
+                <Resolution Index="3" />
+                <Resolution Index="2" />
+                <Resolution Index="1" />
+              </SupportedResolutions>
+            </Data>
+          </Input>
+          <Input>
+            <Number>04</Number>
+            <Name>APPLE TV</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>5297961</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 04:slot 01:slot 01</Address>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions>
+                <Resolution Index="32" />
+                <Resolution Index="32" />
+                <Resolution Index="30" />
+                <Resolution Index="29" />
+                <Resolution Index="10" />
+                <Resolution Index="3" />
+                <Resolution Index="1" />
+              </SupportedResolutions>
+            </Data>
+          </Input>
+        </Inputs>
+        <Outputs>
+          <Input>
+            <Number>01</Number>
+            <Name>TIVO</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>4573620</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 01:slot 01:slot 01</Address>
+            <Type>InputLocalHDMIOutput</Type>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions />
+            </Data>
+          </Input>
+          <Input>
+            <Number>02</Number>
+            <Name>DIRECTV</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>8850786</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 02:slot 01:slot 01</Address>
+            <Type>InputLocalHDMIOutput</Type>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions />
+            </Data>
+          </Input>
+          <Input>
+            <Number>03</Number>
+            <Name>BLU RAY</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>8617161</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 03:slot 01:slot 01</Address>
+            <Type>InputLocalHDMIOutput</Type>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions />
+            </Data>
+          </Input>
+          <Input>
+            <Number>04</Number>
+            <Name>APPLE TV</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>5297961</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 04:slot 01:slot 01</Address>
+            <Type>InputLocalHDMIOutput</Type>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions />
+            </Data>
+          </Input>
+          <Output>
+            <Number>01</Number>
+            <Name>FAMILY</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>9087944</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 09:slot 01:slot 01</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <EDID3DCapability>3D support:Basic</EDID3DCapability>
+              <SupportedResolutions>
+                <Resolution Index="32" />
+                <Resolution Index="29" />
+                <Resolution Index="30" />
+                <Resolution Index="10" />
+                <Resolution Index="3" />
+                <Resolution Index="2" />
+                <Resolution Index="1" />
+              </SupportedResolutions>
+            </Data>
+          </Output>
+          <Output>
+            <Number>01</Number>
+            <Name>FAMILY</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>9087944</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 09:slot 01:slot 01</Address>
+            <Type>HDMIOutput</Type>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions />
+            </Data>
+          </Output>
+          <Output>
+            <Number>02</Number>
+            <Name>MASTER BED</Name>
+            <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>9087944</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 09:slot 01:slot 02</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <EDID3DCapability>3D support:Basic</EDID3DCapability>
+              <SupportedResolutions>
+                <Resolution Index="33" />
+                <Resolution Index="32" />
+                <Resolution Index="31" />
+                <Resolution Index="29" />
+                <Resolution Index="28" />
+                <Resolution Index="30" />
+                <Resolution Index="25" />
+                <Resolution Index="22" />
+                <Resolution Index="16" />
+                <Resolution Index="10" />
+                <Resolution Index="9" />
+                <Resolution Index="8" />
+                <Resolution Index="6" />
+                <Resolution Index="5" />
+                <Resolution Index="4" />
+                <Resolution Index="3" />
+                <Resolution Index="2" />
+                <Resolution Index="1" />
+              </SupportedResolutions>
+            </Data>
+          </Output>
+          <Output>
+            <Number>03</Number>
+            <Name>HER OFFICE</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>9087910</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 09:slot 02:slot 01</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <EDID3DCapability>3D support:Basic</EDID3DCapability>
+              <SupportedResolutions>
+                <Resolution Index="33" />
+                <Resolution Index="32" />
+                <Resolution Index="31" />
+                <Resolution Index="29" />
+                <Resolution Index="28" />
+                <Resolution Index="30" />
+                <Resolution Index="25" />
+                <Resolution Index="22" />
+                <Resolution Index="16" />
+                <Resolution Index="10" />
+                <Resolution Index="9" />
+                <Resolution Index="8" />
+                <Resolution Index="6" />
+                <Resolution Index="5" />
+                <Resolution Index="4" />
+                <Resolution Index="3" />
+                <Resolution Index="2" />
+                <Resolution Index="1" />
+              </SupportedResolutions>
+            </Data>
+          </Output>
+          <Output>
+            <Number>03</Number>
+            <Name>HER OFFICE</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>9087910</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 09:slot 02:slot 01</Address>
+            <Type>HDMIOutput</Type>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions />
+            </Data>
+          </Output>
+          <Output>
+            <Number>04</Number>
+            <Name>GYM</Name>
+            <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>9087910</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 09:slot 02:slot 02</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions>
+                <Resolution Index="32" />
+                <Resolution Index="29" />
+                <Resolution Index="30" />
+                <Resolution Index="26" />
+                <Resolution Index="24" />
+                <Resolution Index="22" />
+                <Resolution Index="18" />
+                <Resolution Index="16" />
+                <Resolution Index="13" />
+                <Resolution Index="10" />
+                <Resolution Index="8" />
+                <Resolution Index="6" />
+                <Resolution Index="3" />
+                <Resolution Index="1" />
+              </SupportedResolutions>
+            </Data>
+          </Output>
+          <Output>
+            <Number>05</Number>
+            <Name>KITCHEN</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>7580383</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 0A:slot 01:slot 01</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions>
+                <Resolution Index="32" />
+                <Resolution Index="29" />
+                <Resolution Index="30" />
+                <Resolution Index="26" />
+                <Resolution Index="25" />
+                <Resolution Index="22" />
+                <Resolution Index="17" />
+                <Resolution Index="16" />
+                <Resolution Index="15" />
+                <Resolution Index="13" />
+                <Resolution Index="10" />
+                <Resolution Index="8" />
+                <Resolution Index="6" />
+                <Resolution Index="3" />
+                <Resolution Index="1" />
+              </SupportedResolutions>
+            </Data>
+          </Output>
+          <Output>
+            <Number>05</Number>
+            <Name>KITCHEN</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>7580383</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 0A:slot 01:slot 01</Address>
+            <Type>HDMIOutput</Type>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions />
+            </Data>
+          </Output>
+          <Output>
+            <Number>06</Number>
+            <Name>GUEST</Name>
+            <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>7580383</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 0A:slot 01:slot 02</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions>
+                <Resolution Index="32" />
+                <Resolution Index="29" />
+                <Resolution Index="30" />
+                <Resolution Index="26" />
+                <Resolution Index="25" />
+                <Resolution Index="22" />
+                <Resolution Index="17" />
+                <Resolution Index="16" />
+                <Resolution Index="15" />
+                <Resolution Index="13" />
+                <Resolution Index="10" />
+                <Resolution Index="8" />
+                <Resolution Index="6" />
+                <Resolution Index="3" />
+                <Resolution Index="1" />
+              </SupportedResolutions>
+            </Data>
+          </Output>
+          <Output>
+            <Number>07</Number>
+            <Name>HIS OFFICE</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>8058005</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 0A:slot 02:slot 01</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <EDID3DCapability>3D support:Basic</EDID3DCapability>
+              <SupportedResolutions>
+                <Resolution Index="33" />
+                <Resolution Index="32" />
+                <Resolution Index="31" />
+                <Resolution Index="29" />
+                <Resolution Index="28" />
+                <Resolution Index="30" />
+                <Resolution Index="25" />
+                <Resolution Index="22" />
+                <Resolution Index="16" />
+                <Resolution Index="10" />
+                <Resolution Index="9" />
+                <Resolution Index="8" />
+                <Resolution Index="6" />
+                <Resolution Index="5" />
+                <Resolution Index="4" />
+                <Resolution Index="3" />
+                <Resolution Index="2" />
+                <Resolution Index="1" />
+              </SupportedResolutions>
+            </Data>
+          </Output>
+          <Output>
+            <Number>07</Number>
+            <Name>HIS OFFICE</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>8058005</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 0A:slot 02:slot 01</Address>
+            <Type>HDMIOutput</Type>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions />
+            </Data>
+          </Output>
+          <Output>
+            <Number>08</Number>
+            <Name>POOL</Name>
+            <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>8058005</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 0A:slot 02:slot 02</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <EDID3DCapability>
+              </EDID3DCapability>
+              <SupportedResolutions>
+                <Resolution Index="33" />
+                <Resolution Index="32" />
+                <Resolution Index="31" />
+                <Resolution Index="29" />
+                <Resolution Index="28" />
+                <Resolution Index="30" />
+                <Resolution Index="25" />
+                <Resolution Index="22" />
+                <Resolution Index="16" />
+                <Resolution Index="10" />
+                <Resolution Index="9" />
+                <Resolution Index="8" />
+                <Resolution Index="6" />
+                <Resolution Index="5" />
+                <Resolution Index="4" />
+                <Resolution Index="3" />
+                <Resolution Index="2" />
+                <Resolution Index="1" />
+              </SupportedResolutions>
+            </Data>
+          </Output>
+        </Outputs>
+      </VideoResolutionSupportOnOutputs>
+      <AudioFormatSupportOnOutputs>
+        <Heading2>Audio Format Support on Outputs</Heading2>
+        <Inputs>
+          <Input>
+            <Number>01</Number>
+            <Name>TIVO</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>4573620</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 01:slot 01:slot 01</Address>
+            <Data>
+              <SupportedAudioFormats>
+                <AudioFormat>
+                  <Format>Linear PCM</Format>
+                  <Channels>2</Channels>
+                  <Frequencies>
+                    <Frequency>32</Frequency>
+                    <Frequency>44</Frequency>
+                    <Frequency>48</Frequency>
+                  </Frequencies>
+                </AudioFormat>
+              </SupportedAudioFormats>
+            </Data>
+          </Input>
+          <Input>
+            <Number>02</Number>
+            <Name>DIRECTV</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>8850786</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 02:slot 01:slot 01</Address>
+            <Data>
+              <SupportedAudioFormats>
+                <AudioFormat>
+                  <Format>Linear PCM</Format>
+                  <Channels>2</Channels>
+                  <Frequencies>
+                    <Frequency>32</Frequency>
+                    <Frequency>44</Frequency>
+                    <Frequency>48</Frequency>
+                  </Frequencies>
+                </AudioFormat>
+              </SupportedAudioFormats>
+            </Data>
+          </Input>
+          <Input>
+            <Number>03</Number>
+            <Name>BLU RAY</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>8617161</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 03:slot 01:slot 01</Address>
+            <Data>
+              <SupportedAudioFormats>
+                <AudioFormat>
+                  <Format>Linear PCM</Format>
+                  <Channels>2</Channels>
+                  <Frequencies>
+                    <Frequency>32</Frequency>
+                    <Frequency>44</Frequency>
+                    <Frequency>48</Frequency>
+                  </Frequencies>
+                </AudioFormat>
+              </SupportedAudioFormats>
+            </Data>
+          </Input>
+          <Input>
+            <Number>04</Number>
+            <Name>APPLE TV</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>5297961</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 04:slot 01:slot 01</Address>
+            <Data>
+              <SupportedAudioFormats>
+                <AudioFormat>
+                  <Format>Linear PCM</Format>
+                  <Channels>2</Channels>
+                  <Frequencies>
+                    <Frequency>32</Frequency>
+                    <Frequency>44</Frequency>
+                    <Frequency>48</Frequency>
+                  </Frequencies>
+                </AudioFormat>
+              </SupportedAudioFormats>
+            </Data>
+          </Input>
+        </Inputs>
+        <Outputs>
+          <Input>
+            <Number>01</Number>
+            <Name>TIVO</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>4573620</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 01:slot 01:slot 01</Address>
+            <Type>InputLocalHDMIOutput</Type>
+            <Data>
+              <SupportedAudioFormats />
+            </Data>
+          </Input>
+          <Input>
+            <Number>02</Number>
+            <Name>DIRECTV</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>8850786</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 02:slot 01:slot 01</Address>
+            <Type>InputLocalHDMIOutput</Type>
+            <Data>
+              <SupportedAudioFormats />
+            </Data>
+          </Input>
+          <Input>
+            <Number>03</Number>
+            <Name>BLU RAY</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>8617161</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 03:slot 01:slot 01</Address>
+            <Type>InputLocalHDMIOutput</Type>
+            <Data>
+              <SupportedAudioFormats />
+            </Data>
+          </Input>
+          <Input>
+            <Number>04</Number>
+            <Name>APPLE TV</Name>
+            <FirmwareName>DMC-HD-Stream</FirmwareName>
+            <FirmwareVersion>1.1592.00041</FirmwareVersion>
+            <SerialNumber>5297961</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 04:slot 01:slot 01</Address>
+            <Type>InputLocalHDMIOutput</Type>
+            <Data>
+              <SupportedAudioFormats />
+            </Data>
+          </Input>
+          <Output>
+            <Number>01</Number>
+            <Name>FAMILY</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>9087944</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 09:slot 01:slot 01</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <SupportedAudioFormats>
+                <AudioFormat>
+                  <Format>Linear PCM</Format>
+                  <Channels>2</Channels>
+                  <Frequencies>
+                    <Frequency>32</Frequency>
+                    <Frequency>44</Frequency>
+                    <Frequency>48</Frequency>
+                  </Frequencies>
+                </AudioFormat>
+              </SupportedAudioFormats>
+            </Data>
+          </Output>
+          <Output>
+            <Number>01</Number>
+            <Name>FAMILY</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>9087944</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 09:slot 01:slot 01</Address>
+            <Type>HDMIOutput</Type>
+            <Data>
+              <SupportedAudioFormats />
+            </Data>
+          </Output>
+          <Output>
+            <Number>02</Number>
+            <Name>MASTER BED</Name>
+            <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>9087944</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 09:slot 01:slot 02</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <SupportedAudioFormats>
+                <AudioFormat>
+                  <Format>Linear PCM</Format>
+                  <Channels>2</Channels>
+                  <Frequencies>
+                    <Frequency>32</Frequency>
+                    <Frequency>44</Frequency>
+                    <Frequency>48</Frequency>
+                  </Frequencies>
+                </AudioFormat>
+              </SupportedAudioFormats>
+            </Data>
+          </Output>
+          <Output>
+            <Number>03</Number>
+            <Name>HER OFFICE</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>9087910</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 09:slot 02:slot 01</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <SupportedAudioFormats>
+                <AudioFormat>
+                  <Format>Linear PCM</Format>
+                  <Channels>2</Channels>
+                  <Frequencies>
+                    <Frequency>32</Frequency>
+                    <Frequency>44</Frequency>
+                    <Frequency>48</Frequency>
+                  </Frequencies>
+                </AudioFormat>
+                <AudioFormat>
+                  <Format>AC-3</Format>
+                  <Channels>6</Channels>
+                  <Frequencies>
+                    <Frequency>32</Frequency>
+                    <Frequency>44</Frequency>
+                    <Frequency>48</Frequency>
+                  </Frequencies>
+                </AudioFormat>
+              </SupportedAudioFormats>
+            </Data>
+          </Output>
+          <Output>
+            <Number>03</Number>
+            <Name>HER OFFICE</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>9087910</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 09:slot 02:slot 01</Address>
+            <Type>HDMIOutput</Type>
+            <Data>
+              <SupportedAudioFormats />
+            </Data>
+          </Output>
+          <Output>
+            <Number>04</Number>
+            <Name>GYM</Name>
+            <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>9087910</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 09:slot 02:slot 02</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <SupportedAudioFormats>
+                <AudioFormat>
+                  <Format>Linear PCM</Format>
+                  <Channels>2</Channels>
+                  <Frequencies>
+                    <Frequency>32</Frequency>
+                    <Frequency>44</Frequency>
+                    <Frequency>48</Frequency>
+                  </Frequencies>
+                </AudioFormat>
+              </SupportedAudioFormats>
+            </Data>
+          </Output>
+          <Output>
+            <Number>05</Number>
+            <Name>KITCHEN</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>7580383</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 0A:slot 01:slot 01</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <SupportedAudioFormats>
+                <AudioFormat>
+                  <Format>Linear PCM</Format>
+                  <Channels>2</Channels>
+                  <Frequencies>
+                    <Frequency>32</Frequency>
+                    <Frequency>44</Frequency>
+                    <Frequency>48</Frequency>
+                  </Frequencies>
+                </AudioFormat>
+              </SupportedAudioFormats>
+            </Data>
+          </Output>
+          <Output>
+            <Number>05</Number>
+            <Name>KITCHEN</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>7580383</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 0A:slot 01:slot 01</Address>
+            <Type>HDMIOutput</Type>
+            <Data>
+              <SupportedAudioFormats />
+            </Data>
+          </Output>
+          <Output>
+            <Number>06</Number>
+            <Name>GUEST</Name>
+            <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>7580383</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 0A:slot 01:slot 02</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <SupportedAudioFormats>
+                <AudioFormat>
+                  <Format>Linear PCM</Format>
+                  <Channels>2</Channels>
+                  <Frequencies>
+                    <Frequency>32</Frequency>
+                    <Frequency>44</Frequency>
+                    <Frequency>48</Frequency>
+                  </Frequencies>
+                </AudioFormat>
+              </SupportedAudioFormats>
+            </Data>
+          </Output>
+          <Output>
+            <Number>07</Number>
+            <Name>HIS OFFICE</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>8058005</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 0A:slot 02:slot 01</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <SupportedAudioFormats>
+                <AudioFormat>
+                  <Format>Linear PCM</Format>
+                  <Channels>2</Channels>
+                  <Frequencies>
+                    <Frequency>32</Frequency>
+                    <Frequency>44</Frequency>
+                    <Frequency>48</Frequency>
+                  </Frequencies>
+                </AudioFormat>
+              </SupportedAudioFormats>
+            </Data>
+          </Output>
+          <Output>
+            <Number>07</Number>
+            <Name>HIS OFFICE</Name>
+            <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>8058005</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 0A:slot 02:slot 01</Address>
+            <Type>HDMIOutput</Type>
+            <Data>
+              <SupportedAudioFormats />
+            </Data>
+          </Output>
+          <Output>
+            <Number>08</Number>
+            <Name>POOL</Name>
+            <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+            <FirmwareVersion>1.1498.00021</FirmwareVersion>
+            <SerialNumber>8058005</SerialNumber>
+            <Address>tcp 192.168.1.51:slot 0A:slot 02:slot 02</Address>
+            <Type>DMOutput</Type>
+            <Data>
+              <SupportedAudioFormats>
+                <AudioFormat>
+                  <Format>Linear PCM</Format>
+                  <Channels>2</Channels>
+                  <Frequencies>
+                    <Frequency>32</Frequency>
+                    <Frequency>44</Frequency>
+                    <Frequency>48</Frequency>
+                  </Frequencies>
+                </AudioFormat>
+              </SupportedAudioFormats>
+            </Data>
+          </Output>
+        </Outputs>
+      </AudioFormatSupportOnOutputs>
+    </VideoResolutionAndAudioFormatSupportOnOutputs>
+    <OutputCapabilities>
+      <Heading2>Output Capabilities Chart</Heading2>
+      <Outputs>
+        <Input>
+          <Number>01</Number>
+          <Name>TIVO</Name>
+          <FirmwareName>DMC-HD-Stream</FirmwareName>
+          <FirmwareVersion>1.1592.00041</FirmwareVersion>
+          <SerialNumber>4573620</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 01:slot 01:slot 01</Address>
+          <Type>InputLocalHDMIOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>OFF</PowerStatus>
+              <HotplugStatus>OFF</HotplugStatus>
+              <EDIDValid>Invalid</EDIDValid>
+              <EDIDManufacture>
+              </EDIDManufacture>
+              <EDIDName>
+              </EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Input>
+        <Input>
+          <Number>02</Number>
+          <Name>DIRECTV</Name>
+          <FirmwareName>DMC-HD-Stream</FirmwareName>
+          <FirmwareVersion>1.1592.00041</FirmwareVersion>
+          <SerialNumber>8850786</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 02:slot 01:slot 01</Address>
+          <Type>InputLocalHDMIOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>OFF</PowerStatus>
+              <HotplugStatus>OFF</HotplugStatus>
+              <EDIDValid>Invalid</EDIDValid>
+              <EDIDManufacture>
+              </EDIDManufacture>
+              <EDIDName>
+              </EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Input>
+        <Input>
+          <Number>03</Number>
+          <Name>BLU RAY</Name>
+          <FirmwareName>DMC-HD-Stream</FirmwareName>
+          <FirmwareVersion>1.1592.00041</FirmwareVersion>
+          <SerialNumber>8617161</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 03:slot 01:slot 01</Address>
+          <Type>InputLocalHDMIOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>OFF</PowerStatus>
+              <HotplugStatus>OFF</HotplugStatus>
+              <EDIDValid>Invalid</EDIDValid>
+              <EDIDManufacture>
+              </EDIDManufacture>
+              <EDIDName>
+              </EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Input>
+        <Input>
+          <Number>04</Number>
+          <Name>APPLE TV</Name>
+          <FirmwareName>DMC-HD-Stream</FirmwareName>
+          <FirmwareVersion>1.1592.00041</FirmwareVersion>
+          <SerialNumber>5297961</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 04:slot 01:slot 01</Address>
+          <Type>InputLocalHDMIOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>OFF</PowerStatus>
+              <HotplugStatus>OFF</HotplugStatus>
+              <EDIDValid>Invalid</EDIDValid>
+              <EDIDManufacture>
+              </EDIDManufacture>
+              <EDIDName>
+              </EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Input>
+        <Output>
+          <Number>01</Number>
+          <Name>FAMILY</Name>
+          <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+          <FirmwareVersion>1.1498.00021</FirmwareVersion>
+          <SerialNumber>9087944</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 09:slot 01:slot 01</Address>
+          <Type>DMOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>ON</PowerStatus>
+              <HotplugStatus>ON</HotplugStatus>
+              <EDIDValid>Valid</EDIDValid>
+              <EDIDManufacture>MEI</EDIDManufacture>
+              <EDIDName>PanasonicTV0</EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Output>
+        <Output>
+          <Number>01</Number>
+          <Name>FAMILY</Name>
+          <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+          <FirmwareVersion>1.1498.00021</FirmwareVersion>
+          <SerialNumber>9087944</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 09:slot 01:slot 01</Address>
+          <Type>HDMIOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>OFF</PowerStatus>
+              <HotplugStatus>OFF</HotplugStatus>
+              <EDIDValid>Invalid</EDIDValid>
+              <EDIDManufacture>
+              </EDIDManufacture>
+              <EDIDName>
+              </EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Output>
+        <Output>
+          <Number>02</Number>
+          <Name>MASTER BED</Name>
+          <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+          <FirmwareVersion>1.1498.00021</FirmwareVersion>
+          <SerialNumber>9087944</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 09:slot 01:slot 02</Address>
+          <Type>DMOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>ON</PowerStatus>
+              <HotplugStatus>ON</HotplugStatus>
+              <EDIDValid>Valid</EDIDValid>
+              <EDIDManufacture>SAM</EDIDManufacture>
+              <EDIDName>SAMSUNG</EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Output>
+        <Output>
+          <Number>03</Number>
+          <Name>HER OFFICE</Name>
+          <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+          <FirmwareVersion>1.1498.00021</FirmwareVersion>
+          <SerialNumber>9087910</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 09:slot 02:slot 01</Address>
+          <Type>DMOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>ON</PowerStatus>
+              <HotplugStatus>ON</HotplugStatus>
+              <EDIDValid>Valid</EDIDValid>
+              <EDIDManufacture>FNI</EDIDManufacture>
+              <EDIDName>LCD TV</EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Output>
+        <Output>
+          <Number>03</Number>
+          <Name>HER OFFICE</Name>
+          <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+          <FirmwareVersion>1.1498.00021</FirmwareVersion>
+          <SerialNumber>9087910</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 09:slot 02:slot 01</Address>
+          <Type>HDMIOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>OFF</PowerStatus>
+              <HotplugStatus>OFF</HotplugStatus>
+              <EDIDValid>Invalid</EDIDValid>
+              <EDIDManufacture>
+              </EDIDManufacture>
+              <EDIDName>
+              </EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Output>
+        <Output>
+          <Number>04</Number>
+          <Name>GYM</Name>
+          <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+          <FirmwareVersion>1.1498.00021</FirmwareVersion>
+          <SerialNumber>9087910</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 09:slot 02:slot 02</Address>
+          <Type>DMOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>OFF</PowerStatus>
+              <HotplugStatus>ON</HotplugStatus>
+              <EDIDValid>Invalid</EDIDValid>
+              <EDIDManufacture>
+              </EDIDManufacture>
+              <EDIDName>
+              </EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Output>
+        <Output>
+          <Number>05</Number>
+          <Name>KITCHEN</Name>
+          <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+          <FirmwareVersion>1.1498.00021</FirmwareVersion>
+          <SerialNumber>7580383</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 0A:slot 01:slot 01</Address>
+          <Type>DMOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>ON</PowerStatus>
+              <HotplugStatus>ON</HotplugStatus>
+              <EDIDValid>Valid</EDIDValid>
+              <EDIDManufacture>SAM</EDIDManufacture>
+              <EDIDName>SAMSUNG</EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Output>
+        <Output>
+          <Number>05</Number>
+          <Name>KITCHEN</Name>
+          <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+          <FirmwareVersion>1.1498.00021</FirmwareVersion>
+          <SerialNumber>7580383</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 0A:slot 01:slot 01</Address>
+          <Type>HDMIOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>OFF</PowerStatus>
+              <HotplugStatus>OFF</HotplugStatus>
+              <EDIDValid>Invalid</EDIDValid>
+              <EDIDManufacture>
+              </EDIDManufacture>
+              <EDIDName>
+              </EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Output>
+        <Output>
+          <Number>06</Number>
+          <Name>GUEST</Name>
+          <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+          <FirmwareVersion>1.1498.00021</FirmwareVersion>
+          <SerialNumber>7580383</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 0A:slot 01:slot 02</Address>
+          <Type>DMOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>ON</PowerStatus>
+              <HotplugStatus>ON</HotplugStatus>
+              <EDIDValid>Valid</EDIDValid>
+              <EDIDManufacture>SAM</EDIDManufacture>
+              <EDIDName>SAMSUNG</EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Output>
+        <Output>
+          <Number>07</Number>
+          <Name>HIS OFFICE</Name>
+          <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+          <FirmwareVersion>1.1498.00021</FirmwareVersion>
+          <SerialNumber>8058005</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 0A:slot 02:slot 01</Address>
+          <Type>DMOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>ON</PowerStatus>
+              <HotplugStatus>ON</HotplugStatus>
+              <EDIDValid>Valid</EDIDValid>
+              <EDIDManufacture>SAM</EDIDManufacture>
+              <EDIDName>SyncMaster</EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Output>
+        <Output>
+          <Number>07</Number>
+          <Name>HIS OFFICE</Name>
+          <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+          <FirmwareVersion>1.1498.00021</FirmwareVersion>
+          <SerialNumber>8058005</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 0A:slot 02:slot 01</Address>
+          <Type>HDMIOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>OFF</PowerStatus>
+              <HotplugStatus>OFF</HotplugStatus>
+              <EDIDValid>Invalid</EDIDValid>
+              <EDIDManufacture>
+              </EDIDManufacture>
+              <EDIDName>
+              </EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Output>
+        <Output>
+          <Number>08</Number>
+          <Name>POOL</Name>
+          <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+          <FirmwareVersion>1.1498.00021</FirmwareVersion>
+          <SerialNumber>8058005</SerialNumber>
+          <Address>tcp 192.168.1.51:slot 0A:slot 02:slot 02</Address>
+          <Type>DMOutput</Type>
+          <Data>
+            <Cables />
+            <EDIDInfo>
+              <PowerStatus>OFF</PowerStatus>
+              <HotplugStatus>OFF</HotplugStatus>
+              <EDIDValid>Invalid</EDIDValid>
+              <EDIDManufacture>
+              </EDIDManufacture>
+              <EDIDName>
+              </EDIDName>
+            </EDIDInfo>
+          </Data>
+        </Output>
+      </Outputs>
+    </OutputCapabilities>
+  </TestReports>
+  <ConnectedDevices>
+    <InputCard>
+      <FirmwareName>DMC-HD</FirmwareName>
+      <FirmwareVersion>1.1592.00041</FirmwareVersion>
+      <SerialNumber>4573620</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 01:slot 01</Address>
+      <SlotNumbers>1</SlotNumbers>
+      <DisplayNames>TIVO</DisplayNames>
+    </InputCard>
+    <InputCard>
+      <FirmwareName>DMC-HD</FirmwareName>
+      <FirmwareVersion>1.1592.00041</FirmwareVersion>
+      <SerialNumber>8850786</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 02:slot 01</Address>
+      <SlotNumbers>2</SlotNumbers>
+      <DisplayNames>DIRECTV</DisplayNames>
+    </InputCard>
+    <InputCard>
+      <FirmwareName>DMC-HD</FirmwareName>
+      <FirmwareVersion>1.1592.00041</FirmwareVersion>
+      <SerialNumber>8617161</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 03:slot 01</Address>
+      <SlotNumbers>3</SlotNumbers>
+      <DisplayNames>BLU RAY</DisplayNames>
+    </InputCard>
+    <InputCard>
+      <FirmwareName>DMC-HD</FirmwareName>
+      <FirmwareVersion>1.1592.00041</FirmwareVersion>
+      <SerialNumber>5297961</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 04:slot 01</Address>
+      <SlotNumbers>4</SlotNumbers>
+      <DisplayNames>APPLE TV</DisplayNames>
+    </InputCard>
+    <OutputCard>
+      <FirmwareName>DMC-CO-HD</FirmwareName>
+      <FirmwareVersion>1.1498.00021</FirmwareVersion>
+      <SerialNumber>9087944</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 09:slot 01</Address>
+      <SlotNumbers>1, 2</SlotNumbers>
+      <DisplayNames>FAMILY, MASTER BED</DisplayNames>
+    </OutputCard>
+    <OutputCard>
+      <FirmwareName>DMC-CO-HD</FirmwareName>
+      <FirmwareVersion>1.1498.00021</FirmwareVersion>
+      <SerialNumber>9087910</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 09:slot 02</Address>
+      <SlotNumbers>3, 4</SlotNumbers>
+      <DisplayNames>HER OFFICE, GYM</DisplayNames>
+    </OutputCard>
+    <OutputCard>
+      <FirmwareName>DMC-CO-HD</FirmwareName>
+      <FirmwareVersion>1.1498.00021</FirmwareVersion>
+      <SerialNumber>7580383</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 0A:slot 01</Address>
+      <SlotNumbers>5, 6</SlotNumbers>
+      <DisplayNames>KITCHEN, GUEST</DisplayNames>
+    </OutputCard>
+    <OutputCard>
+      <FirmwareName>DMC-CO-HD</FirmwareName>
+      <FirmwareVersion>1.1498.00021</FirmwareVersion>
+      <SerialNumber>8058005</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 0A:slot 02</Address>
+      <SlotNumbers>7, 8</SlotNumbers>
+      <DisplayNames>HIS OFFICE, POOL</DisplayNames>
+    </OutputCard>
+    <DeviceConnectedToOutput>
+      <FirmwareName>DM-RMC-100-C</FirmwareName>
+      <FirmwareVersion>1.1498.00021</FirmwareVersion>
+      <SerialNumber>5643607</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 09:slot 01:slot 01:slot 01</Address>
+      <SlotNumbers>1</SlotNumbers>
+      <DisplayNames>FAMILY</DisplayNames>
+    </DeviceConnectedToOutput>
+    <DeviceConnectedToOutput>
+      <FirmwareName>DM-RMC-100-C</FirmwareName>
+      <FirmwareVersion>1.1498.00021</FirmwareVersion>
+      <SerialNumber>5643596</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 09:slot 01:slot 02:slot 01</Address>
+      <SlotNumbers>2</SlotNumbers>
+      <DisplayNames>MASTER BED</DisplayNames>
+    </DeviceConnectedToOutput>
+    <DeviceConnectedToOutput>
+      <FirmwareName>DM-RMC-SCALER-C</FirmwareName>
+      <FirmwareVersion>1.1592.00053</FirmwareVersion>
+      <SerialNumber>8103243</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 09:slot 02:slot 01:slot 01</Address>
+      <SlotNumbers>3</SlotNumbers>
+      <DisplayNames>HER OFFICE</DisplayNames>
+    </DeviceConnectedToOutput>
+    <DeviceConnectedToOutput>
+      <FirmwareName>DM-RMC-100-C</FirmwareName>
+      <FirmwareVersion>1.1498.00021</FirmwareVersion>
+      <SerialNumber>5643602</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 09:slot 02:slot 02:slot 01</Address>
+      <SlotNumbers>4</SlotNumbers>
+      <DisplayNames>GYM</DisplayNames>
+    </DeviceConnectedToOutput>
+    <DeviceConnectedToOutput>
+      <FirmwareName>DM-RMC-100-C</FirmwareName>
+      <FirmwareVersion>1.1498.00021</FirmwareVersion>
+      <SerialNumber>5866353</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 0A:slot 01:slot 01:slot 01</Address>
+      <SlotNumbers>5</SlotNumbers>
+      <DisplayNames>KITCHEN</DisplayNames>
+    </DeviceConnectedToOutput>
+    <DeviceConnectedToOutput>
+      <FirmwareName>DM-RMC-100-C</FirmwareName>
+      <FirmwareVersion>1.1498.00021</FirmwareVersion>
+      <SerialNumber>5643599</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 0A:slot 01:slot 02:slot 01</Address>
+      <SlotNumbers>6</SlotNumbers>
+      <DisplayNames>GUEST</DisplayNames>
+    </DeviceConnectedToOutput>
+    <DeviceConnectedToOutput>
+      <FirmwareName>DM-RMC-SCALER-C</FirmwareName>
+      <FirmwareVersion>1.1592.00053</FirmwareVersion>
+      <SerialNumber>9073612</SerialNumber>
+      <Address>tcp 192.168.1.51:slot 0A:slot 02:slot 01:slot 01</Address>
+      <SlotNumbers>7</SlotNumbers>
+      <DisplayNames>HIS OFFICE</DisplayNames>
+    </DeviceConnectedToOutput>
+  </ConnectedDevices>
+  <LinkQualityData>
+    <Input>
+      <Number>01</Number>
+      <Name>TIVO</Name>
+      <FirmwareName>DMC-HD-Stream</FirmwareName>
+      <Address>tcp 192.168.1.51:slot 01:slot 01:slot 01</Address>
+      <Data>
+        <IsApplicableToThisDevice>False</IsApplicableToThisDevice>
+        <LinkStatus>{INVALID}</LinkStatus>
+        <ConnectedEndPointDeviceFirmwareName>{INVALID}</ConnectedEndPointDeviceFirmwareName>
+      </Data>
+    </Input>
+    <Input>
+      <Number>02</Number>
+      <Name>DIRECTV</Name>
+      <FirmwareName>DMC-HD-Stream</FirmwareName>
+      <Address>tcp 192.168.1.51:slot 02:slot 01:slot 01</Address>
+      <Data>
+        <IsApplicableToThisDevice>False</IsApplicableToThisDevice>
+        <LinkStatus>{INVALID}</LinkStatus>
+        <ConnectedEndPointDeviceFirmwareName>{INVALID}</ConnectedEndPointDeviceFirmwareName>
+      </Data>
+    </Input>
+    <Input>
+      <Number>03</Number>
+      <Name>BLU RAY</Name>
+      <FirmwareName>DMC-HD-Stream</FirmwareName>
+      <Address>tcp 192.168.1.51:slot 03:slot 01:slot 01</Address>
+      <Data>
+        <IsApplicableToThisDevice>False</IsApplicableToThisDevice>
+        <LinkStatus>{INVALID}</LinkStatus>
+        <ConnectedEndPointDeviceFirmwareName>{INVALID}</ConnectedEndPointDeviceFirmwareName>
+      </Data>
+    </Input>
+    <Input>
+      <Number>04</Number>
+      <Name>APPLE TV</Name>
+      <FirmwareName>DMC-HD-Stream</FirmwareName>
+      <Address>tcp 192.168.1.51:slot 04:slot 01:slot 01</Address>
+      <Data>
+        <IsApplicableToThisDevice>False</IsApplicableToThisDevice>
+        <LinkStatus>{INVALID}</LinkStatus>
+        <ConnectedEndPointDeviceFirmwareName>{INVALID}</ConnectedEndPointDeviceFirmwareName>
+      </Data>
+    </Input>
+    <Output>
+      <Number>01</Number>
+      <Name>FAMILY</Name>
+      <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+      <Address>tcp 192.168.1.51:slot 09:slot 01:slot 01</Address>
+      <Data>
+        <IsApplicableToThisDevice>True</IsApplicableToThisDevice>
+        <LinkStatus>LinkIsGood</LinkStatus>
+        <ConnectedEndPointDeviceFirmwareName>DM-RMC-100-C</ConnectedEndPointDeviceFirmwareName>
+      </Data>
+    </Output>
+    <Output>
+      <Number>02</Number>
+      <Name>MASTER BED</Name>
+      <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+      <Address>tcp 192.168.1.51:slot 09:slot 01:slot 02</Address>
+      <Data>
+        <IsApplicableToThisDevice>True</IsApplicableToThisDevice>
+        <LinkStatus>None</LinkStatus>
+        <ConnectedEndPointDeviceFirmwareName>DM-RMC-100-C</ConnectedEndPointDeviceFirmwareName>
+      </Data>
+    </Output>
+    <Output>
+      <Number>03</Number>
+      <Name>HER OFFICE</Name>
+      <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+      <Address>tcp 192.168.1.51:slot 09:slot 02:slot 01</Address>
+      <Data>
+        <IsApplicableToThisDevice>True</IsApplicableToThisDevice>
+        <LinkStatus>LinkIsGood</LinkStatus>
+        <ConnectedEndPointDeviceFirmwareName>DM-RMC-SCALER-C</ConnectedEndPointDeviceFirmwareName>
+      </Data>
+    </Output>
+    <Output>
+      <Number>04</Number>
+      <Name>GYM</Name>
+      <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+      <Address>tcp 192.168.1.51:slot 09:slot 02:slot 02</Address>
+      <Data>
+        <IsApplicableToThisDevice>True</IsApplicableToThisDevice>
+        <LinkStatus>LinkIsGood</LinkStatus>
+        <ConnectedEndPointDeviceFirmwareName>DM-RMC-100-C</ConnectedEndPointDeviceFirmwareName>
+      </Data>
+    </Output>
+    <Output>
+      <Number>05</Number>
+      <Name>KITCHEN</Name>
+      <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+      <Address>tcp 192.168.1.51:slot 0A:slot 01:slot 01</Address>
+      <Data>
+        <IsApplicableToThisDevice>True</IsApplicableToThisDevice>
+        <LinkStatus>LinkIsPoor</LinkStatus>
+        <ConnectedEndPointDeviceFirmwareName>DM-RMC-100-C</ConnectedEndPointDeviceFirmwareName>
+      </Data>
+    </Output>
+    <Output>
+      <Number>06</Number>
+      <Name>GUEST</Name>
+      <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+      <Address>tcp 192.168.1.51:slot 0A:slot 01:slot 02</Address>
+      <Data>
+        <IsApplicableToThisDevice>True</IsApplicableToThisDevice>
+        <LinkStatus>LinkIsGood</LinkStatus>
+        <ConnectedEndPointDeviceFirmwareName>DM-RMC-100-C</ConnectedEndPointDeviceFirmwareName>
+      </Data>
+    </Output>
+    <Output>
+      <Number>07</Number>
+      <Name>HIS OFFICE</Name>
+      <FirmwareName>DMC-CO-HD-Stream-0</FirmwareName>
+      <Address>tcp 192.168.1.51:slot 0A:slot 02:slot 01</Address>
+      <Data>
+        <IsApplicableToThisDevice>True</IsApplicableToThisDevice>
+        <LinkStatus>LinkIsGood</LinkStatus>
+        <ConnectedEndPointDeviceFirmwareName>DM-RMC-SCALER-C</ConnectedEndPointDeviceFirmwareName>
+      </Data>
+    </Output>
+    <Output>
+      <Number>08</Number>
+      <Name>POOL</Name>
+      <FirmwareName>DMC-CO-HD-Stream-1</FirmwareName>
+      <Address>tcp 192.168.1.51:slot 0A:slot 02:slot 02</Address>
+      <Data>
+        <IsApplicableToThisDevice>True</IsApplicableToThisDevice>
+        <LinkStatus>None</LinkStatus>
+        <ConnectedEndPointDeviceFirmwareName>{INVALID}</ConnectedEndPointDeviceFirmwareName>
+      </Data>
+    </Output>
+  </LinkQualityData>
+  <RpsStatus />
+</DigitalMediaTestReport>
